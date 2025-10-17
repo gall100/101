@@ -35,7 +35,7 @@ Como la población se duplica en $3$ años:
 2P_0 = P_0 e^{3k} \quad\Rightarrow\quad e^{3k}=2 \quad\Rightarrow\quad k=\frac{\ln 2}{3}
 \]
 
-#### Tiempo para triplicar ($P(t_3)=3P_0$):
+- Tiempo para triplicar ($P(t_3)=3P_0$):
 \[
 3P_0 = P_0 e^{k t_3} \quad\Rightarrow\quad e^{k t_3}=3
 \]
@@ -43,7 +43,7 @@ Como la población se duplica en $3$ años:
 t_3=\frac{\ln 3}{k}=\frac{3\ln 3}{\ln 2}\approx 4.755\ \text{años}
 \]
 
-#### Tiempo para cuadruplicar ($P(t_4)=4P_0$):
+- Tiempo para cuadruplicar ($P(t_4)=4P_0$):
 \[
 4P_0 = P_0 e^{k t_4} \quad\Rightarrow\quad e^{k t_4}=4
 \]
@@ -51,7 +51,7 @@ t_3=\frac{\ln 3}{k}=\frac{3\ln 3}{\ln 2}\approx 4.755\ \text{años}
 t_4=\frac{\ln 4}{k}=\frac{3\ln 4}{\ln 2}=\frac{3\cdot 2\ln 2}{\ln 2}=6\ \text{años}
 \]
 
-#### Tiempo para quintuplicar ($P(t_5)=5P_0$):
+- Tiempo para quintuplicar ($P(t_5)=5P_0$):
 \[
 5P_0 = P_0 e^{k t_5} \quad\Rightarrow\quad e^{k t_5}=5
 \]
@@ -59,42 +59,6 @@ t_4=\frac{\ln 4}{k}=\frac{3\ln 4}{\ln 2}=\frac{3\cdot 2\ln 2}{\ln 2}=6\ \text{a�
 t_5=\frac{\ln 5}{k}=\frac{3\ln 5}{\ln 2}\approx 6.97\ \text{años}
 \]
 
-### Código LaTeX completo
-\begin{verbatim}
-\documentclass{article}
-\usepackage{amsmath}
-\usepackage[utf8]{inputenc}
-\usepackage[spanish]{babel}
-\begin{document}
+\end{document}
 
-\section*{Ejemplo}
-Se sabe que la población de una comunidad crece con una razón proporcional al número de personas presentes en el tiempo $t$. Si la población inicial $P_0 = 1000$ se duplica en $3$ años, ¿en cuánto tiempo se triplicará, cuadruplicará y quintuplicará?
 
-Definimos:
-\begin{itemize}
-  \item $P(t)$: población en el tiempo $t$,
-  \item $P_0$: población inicial ($1000$),
-  \item $k$: constante de proporcionalidad.
-\end{itemize}
-
-La ley de crecimiento proporcional se modela por la ecuación diferencial
-\[
-\frac{dP}{dt}=kP.
-\]
-Separando variables e integrando:
-\[
-\frac{dP}{P}=k\,dt \quad\Rightarrow\quad \int\frac{dP}{P}=\int k\,dt
-\]
-\[
-\ln|P|=kt+C \quad\Rightarrow\quad P(t)=Ce^{kt}.
-\]
-Usando la condición inicial $P(0)=P_0$ obtenemos $C=P_0$, por lo tanto
-\[
-P(t)=P_0 e^{kt}.
-\]
-
-Como la población se duplica en $3$ años:
-\[
-2P_0 = P_0 e^{3k} \quad\Rightarrow\quad e^{3k}=2 \quad\Rightarrow\quad k=\frac{\ln 2}{3}.
-\]
-\end{verbatim}
