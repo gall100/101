@@ -1,6 +1,7 @@
 ---
 title: "Cálculo de tiempos de multiplicación de población (EDPoblacionv1.0)"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
     mathjax: default
